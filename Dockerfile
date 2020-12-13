@@ -4,4 +4,5 @@ ADD . /app
 
 WORKDIR /app 
 
-CMD ["python", "hello.py"]
+# CMD ["python", "hello.py"]
+CMD python -m http.server 8888
